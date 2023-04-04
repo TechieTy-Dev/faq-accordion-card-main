@@ -13,7 +13,6 @@ body{
     font-weight: 400;
     background: var(--bg-gradient);
     margin-top: 2rem;
-    overflow: hidden;
 }
 
 :root{
@@ -23,6 +22,11 @@ body{
     --dark-gray: hsl(237, 12%, 33%);
     --gray:hsl(240, 6%, 50%) ;
     --light-gray: hsl(240, 5%, 91%);
+}
+
+/* HIDING SCROLLBAR */
+::-webkit-scrollbar{
+    width: 0;
 }
 /* HIDING DESKTOP VERSION */
 .desktop{
@@ -124,15 +128,16 @@ hr{
 @media screen and (min-width: 767px) {
     body{
         height: 100%;
+        margin-bottom: 11.2rem;
     }
     /* CONTAINER */
     .container{
         display: flex;
         width: 80%;
         flex-direction: row;
-        overflow:initial;
-        margin-bottom: 6rem;
-        min-height: 70vh;
+        justify-content: center;
+        align-items: center;
+        margin-top: 7rem;
     }
     /* HERO BACKGROUND */
     .hero-bg{
@@ -142,7 +147,7 @@ hr{
         margin-left: -8rem;
     }
     .hero-img{
-        clip-path: inset(0px 0px 0px 90px);
+        clip-path: inset(0px 0px 0px 80px);
     }
     /* RED BOX ON HERO IMAGE */
     .box{
