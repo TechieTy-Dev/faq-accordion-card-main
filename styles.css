@@ -1,187 +1,187 @@
 /* IMPORTED FONTS  */
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
 /* GLOBAL STYLES */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-body{
-    font-family: "Kumbh Sans", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    background: var(--bg-gradient);
-    margin-top: 2rem;
+body {
+	font-family: "Kumbh Sans", sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	background: var(--bg-gradient);
+	margin-top: 2rem;
 }
 
-:root{
-    --blue:hsl(238, 29%, 16%) ;
-    --red:  hsl(14, 88%, 65%);
-    --bg-gradient:linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%)) no-repeat;
-    --dark-gray: hsl(237, 12%, 33%);
-    --gray:hsl(240, 6%, 50%) ;
-    --light-gray: hsl(240, 5%, 91%);
+:root {
+	--blue: hsl(238, 29%, 16%);
+	--red: hsl(14, 88%, 65%);
+	--bg-gradient: linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%))
+		no-repeat;
+	--dark-gray: hsl(237, 12%, 33%);
+	--gray: hsl(240, 6%, 50%);
+	--light-gray: hsl(240, 5%, 91%);
 }
 
 /* HIDING SCROLLBAR */
-::-webkit-scrollbar{
-    width: 0;
+::-webkit-scrollbar {
+	width: 0;
 }
 /* HIDING DESKTOP VERSION */
-.desktop{
-    display: none;
+.desktop {
+	display: none;
 }
 /* SHOWING MOBILE VERSION */
-.mobile{
-    display: block;
+.mobile {
+	display: block;
 }
 /* CONTAINER */
-.container{
-    display: flex;
-    flex-direction: column;
-    background: white;
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 12rem;
-    margin-bottom: 4rem;
-    border-radius: 20px;
-    padding: 2rem;
-    box-shadow: 0px 12px 20px rgba(0,0,0,0.3);
+.container {
+	display: flex;
+	flex-direction: column;
+	background: white;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 12rem;
+	margin-bottom: 4rem;
+	border-radius: 20px;
+	padding: 2rem;
+	box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
 }
 /* HERO BACKGROUND */
-.hero-bg{
-    display: flex;
-    flex-direction: column;
-    width: 85%;
-    margin-inline: auto;
-    margin-top: -11rem;
+.hero-bg {
+	display: flex;
+	flex-direction: column;
+	width: 85%;
+	margin-inline: auto;
+	margin-top: -11rem;
 }
 /* HERO IMAGE AND SHADOW */
-.hero-img{
-
-  margin-bottom: 2rem;
-  z-index: 1;
+.hero-img {
+	margin-bottom: 2rem;
+	z-index: 1;
 }
-.shadow{
-    margin-top: -9rem;
-    z-index: 1;
+.shadow {
+	margin-top: -9rem;
+	z-index: 1;
 }
 /* SUMMARY */
-summary{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: .25rem 0;
+summary {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0.25rem 0;
 }
 /* SUMMARY HEADING */
-.heading{
-    text-align: center;
-    font-size: 2rem;
-    margin-top: 3.5rem;
-    margin-bottom: 2.5rem;
+.heading {
+	text-align: center;
+	font-size: 2rem;
+	margin-top: 3.5rem;
+	margin-bottom: 2.5rem;
 }
 /* QUESTION HEADINGS */
-h2{
-    font-weight: 400;
-    color: var(--dark-gray);
+h2 {
+	font-weight: 400;
+	color: var(--dark-gray);
 }
 /* RED TEXT ON HOVER */
-h2:hover{
-    cursor: pointer;
-    color: var(--red);
+h2:hover {
+	cursor: pointer;
+	color: var(--red);
 }
-.bold{
-    font-weight: 700;
+.bold {
+	font-weight: 700;
 }
 /* DESCRIPTION */
-p{
-    font-weight: 400;
-    color: var(--gray);
-    font-size: 1rem;
-    word-spacing: 1px;
-    margin: .5rem 0;
-    width: 90%;
+p {
+	font-weight: 400;
+	color: var(--gray);
+	font-size: 1rem;
+	word-spacing: 1px;
+	margin: 0.5rem 0;
+	width: 90%;
 }
 /* DOWN ARROW */
-.arrow{
-    width: 3%;
-    display: block;
-    transition: 1s;
+.arrow {
+	width: 3%;
+	display: block;
+	transition: 1s;
 }
-.arrow:hover{
-    cursor: pointer;
+.arrow:hover {
+	cursor: pointer;
 }
 /* ONCLICK THE ARROW ROTATES */
-.rotate{
-    transform: rotate(180deg);
+.rotate {
+	transform: rotate(180deg);
 }
 /* HORIZONTAL LINE  */
-hr{
-    margin: 1rem 0;
-    background-color: var(--light-gray);
-    height: 1px;
-    border: none;
+hr {
+	margin: 1rem 0;
+	background-color: var(--light-gray);
+	height: 1px;
+	border: none;
 }
 
 /* MEDIA QUERY */
 @media screen and (min-width: 767px) {
-    body{
-        height: 100%;
-        margin-bottom: 11.2rem;
-    }
-    /* CONTAINER */
-    .container{
-        display: flex;
-        width: 80%;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-top: 7rem;
-    }
-    /* HERO BACKGROUND */
-    .hero-bg{
-        width: 50%;
-        margin-top: 1rem;
-        margin-right: 4rem;
-        margin-left: -8rem;
-    }
-    .hero-img{
-        clip-path: inset(0px 0px 0px 80px);
-    }
-    /* RED BOX ON HERO IMAGE */
-    .box{
-        margin-top: -20rem;
-        margin-left: -3.5rem;
-        z-index: 100;
-        width: 50%;
-        visibility: visible;
-    }
-    .shadow{
-        margin-top: -29rem;
-    }
-    /* CARD */
-    .card{
-        width: 50%;
-        margin: 1rem 0;
-        margin-left: 2rem;
-        padding-right: 4rem;
-    }
-    .heading{
-        text-align: left;
-        margin-top: 1rem;
-        margin-bottom: 3rem;
-    }
-    hr{
-        margin: 1.25rem 0;
-    }
-    p{
-        margin: 0.75rem 0;
-    }
-    .desktop{
-        display: block;
-    }
-    .mobile{
-        display: none;
-    }
+	body {
+		height: 100%;
+		margin-bottom: 14.7rem;
+	}
+	/* CONTAINER */
+	.container {
+		display: flex;
+		width: 70%;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		margin-top: 10rem;
+	}
+	/* HERO BACKGROUND */
+	.hero-bg {
+		width: 50%;
+		margin-top: 1rem;
+		margin-right: 4rem;
+		margin-left: -7rem;
+	}
+	.hero-img {
+		clip-path: inset(0px 0px 0px 70px);
+	}
+	/* RED BOX ON HERO IMAGE */
+	.box {
+		margin-top: -18rem;
+		margin-left: -2.5rem;
+		z-index: 100;
+		width: 50%;
+		visibility: visible;
+	}
+	.shadow {
+		margin-top: -25rem;
+	}
+	/* CARD */
+	.card {
+		width: 50%;
+		margin: 1rem 0;
+		margin-left: 2rem;
+		padding-right: 4rem;
+	}
+	.heading {
+		text-align: left;
+		margin-top: 1rem;
+		margin-bottom: 3rem;
+	}
+	hr {
+		margin: 1.25rem 0;
+	}
+	p {
+		margin: 0.75rem 0;
+	}
+	.desktop {
+		display: block;
+	}
+	.mobile {
+		display: none;
+	}
 }
